@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Sign Up Forms</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+     <!-- Css stylesheet -->
+    <link rel="stylesheet" href="./main.css">
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username or Email">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-groulinkCreateAccount">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <!-- <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p> -->
+            <p class="form-text">
+                <a class="form-link" id="linkCreateAccount">Don't have an account? Click here to create account</a>
+            </p>
+        </form>
+        <form class="form-hidden" id="createAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" id="signupUsername" class="form-input" autofocus placeholder="Username">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Email address">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Confirm Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a class="form-link" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
